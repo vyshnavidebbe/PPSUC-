@@ -1,17 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int x, y;
-    scanf("%d %d", &x, &y);
+    long long n;
+    scanf("%lld", &n);
 
-    // Check if attendance is at least 75%
-    if (y * 100 >= 75 * x) {
-        printf("ELIGIBLE");
+    if(n == 1 || n >= 5) {
+        printf("Yes");
     } else {
-        printf("NOT ELIGIBLE");
+        printf("No");
     }
 
     return 0;
 }
-
 
